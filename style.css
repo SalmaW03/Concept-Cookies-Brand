@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { overflow-x: hidden; }
+
+nav { margin-top: -5%; }
+
+.nav {
+    display: flex;
+    justify-content: right;
+    gap: 2%;
+    list-style: none;
+    margin-right: 3%;
+    animation: fadein 3s forwards;
+}
+
+.navv {
+    position: relative;
+    top: 15vh;
+    margin-left: 77%;
+    width: 20vw;
+    gap: 12%;
+}
+
+.top { position: absolute; }
+
+.point { cursor: pointer; }
+
+.point:hover, .foot-li:hover { text-decoration: 3px rgb(94, 56, 70) underline wavy; }
+
+.point:active, .foot-li:active { text-decoration: none; }
+
+video {
+    max-width: 70%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header { padding-top: 5%; }
+
+h1 {
+    display: flex;
+    font-size: 6rem;
+    justify-content: center;
+    margin-top: 5%;
+    font-style: italic;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(-400px) scaleY(0.9);
+    }
+    5% {
+        opacity: .7;
+    }
+    50% {
+        transform: translateY(0) scaleY(1);
+    }
+    65% {
+        transform: translateY(-17px) scaleY(0.9);
+    }
+    75% {
+        transform: translateY(-22px) scaleY(0.9);
+    }
+    100% {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+}
+
+.title1, .title2, .title3 { animation: fly .4s linear forwards; }
+
+.title2, .title3 { opacity: 0; }
+
+.title2 {
+    animation-delay: .4s;
+    color: #ffffff;
+}
+
+.title3 { animation-delay: .8s; }
+
+.desc1, .desc2 { font-size: 1.5rem; }
+
+.desc1 {
+    margin-right: 15%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.desc2 {
+    margin-left: 25%;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.desc1, .desc2 { animation: fadein 4s forwards; }
+
+.cta {
+    text-align: right;
+    margin: 5%;
+}
+
+.cta1 {
+    margin-right: 1%;
+    border: none;
+    background: rgb(255, 255, 255);
+    padding: 1%;
+    border-radius: 5%;
+    box-shadow: 1px 1px rgb(94, 56, 70);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.cta1:hover { text-decoration: underline wavy 3px rgb(94, 56, 70); }
+
+.cta1:active {
+    box-shadow: 0.5px 0.5px rgb(94, 56, 70);
+    text-decoration: none;
+}
+
+.cta2, .cta3 {
+    animation: fadein 4s forwards;
+}
+
+.cta3 {
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    width: 15%;
+    margin-top: -.5%;
+    margin-left: 8%;
+}
+
+.pic1, .pic2, .pic4 { width: 45%; }
+
+.pic3 {
+    width: 80%;
+    margin-top: 20%;
+    margin-right: -55%;
+}
+
+.picc { 
+    width: 25%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.pic4 {
+    width: 50vw;
+    margin-left: -85%;
+    margin-top: 25%;
+}
+
+.pix {
+    width: 35%;
+    height: 45vh;
+    object-fit: cover;
+    position: absolute;
+    left: 10%;
+    margin-top: 40%;
+} 
+
+.info { font-size: 2rem; }
+
+.info1 { margin-left: 12%; }
+
+.info2 {
+    margin-left: -25%;
+    width: 50%;
+    margin-top: -25%;
+}
+
+.info3 { margin-right: 3%; }
+
+.info4 {
+    margin-top: 20%;
+    position: absolute;
+    margin-left: 15%;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 {
+    gap: 5%;
+    margin-top: 15%;
+}
+
+.div2 { gap: 25%; }
+
+.div3 { margin-top: -15%; }
+
+.div4 { margin-top: -17%; }
+
+.sort-desc {
+    position: absolute;
+    right: 37%;
+    margin-top: 25%;
+    cursor: pointer;
+}
+
+.content {
+    margin: 15%;
+    margin-top: 10%;
+    display: flex;
+    margin-bottom: 15vh;
+}
+
+h3 {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+ul {
+    margin-left: -25%;
+    margin-top: 6%;
+    line-height: 2;
+}
+
+.li {
+    margin-left: -81%;
+    margin-top: -8%;
+    line-height: 2.5;
+}
+
+.content1 {
+    display: flex;
+    justify-content: right;
+    margin-top: -15%;
+    margin-right: 15%;
+}
+
+.h3 { margin-right: 16%; }
+
+.title {
+    position: fixed;
+    top: 0;
+    margin: 2%;
+}
+
+.hide {
+    width: 100%;
+    position: fixed;
+    height: 15%;
+    z-index: 888;
+    background: #ffffff;
+    display: none;
+}
+
+.navv { margin-top: -4.2%; }
+
+.order {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 10%;
+}
+
+.foot-logo {
+    width: 10%;
+    margin-bottom: -5%;
+    margin-left: -7%;
+}
+
+.foot-title, .foot-logo { 
+    display: inline;
+    cursor: pointer;
+}
+
+.foot-title {
+    margin-right: 2%;
+    margin-left: 3%;
+}
+
+a { 
+    text-decoration: none;
+    color: #000000;
+}
+
+.moto {
+    font-size: .8rem;
+    margin-left: 6%;
+}
+
+.insta { text-decoration: underline #000 1px; }
+
+.rights { text-align: center; }
+
+.foot-ul {
+    display: flex;
+    list-style: none;
+    gap: .5%;
+    justify-content: center;
+    margin-left: -79%;
+    margin-top: 7%;
+}
+
+.foot-li { cursor: pointer; }
+
+.icon {
+    position: relative;
+    width: 100%;
+    float: right;
+    margin: 1.5%;
+}
+
+.fa-instagram {
+    position: absolute;
+    right: 0;
+}
+
+footer { margin-top: 5%; }
+
+.hidden, .hidden2, .hiddenn {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.hidden { transform: translateX(-100%); }
+
+.hidden2 { transform: translateX(50%); }
+
+.hiddenn { transform: translateX(-200px); }
+
+.fade {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translate(0);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show.pic1 { transform: translateX(5%) rotate(-40deg); }
+
+@media(prefers-reduced-motion) {
+    .hidden, .hidden2{
+        transition: none;
+    }
+}
+
+.attribute, .att { 
+    font-size: .7rem;
+    margin-left: 2.5%;
+}
+
+.attribute {
+    color: #ffffff;
+    position: absolute;
+    bottom: 1%;
+}
+
+.videvo, .freepik {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.color { color: #ffffff; }
+
+.cookie1 {
+    width: 25%;
+    height: 60vh;
+    object-fit: cover;
+}
